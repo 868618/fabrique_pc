@@ -1,0 +1,167 @@
+#brand, #brand *{
+    box-sizing: border-box;
+}
+#brand{
+    padding: 0 12.1875%;
+    background-color: #031C24;
+    /*background-color: lightpink;*/
+    color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+
+}
+#brand .brand_title{
+    /*font-size: 90px;*/
+    font-size: 4.6875vw;
+    font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 10.104vw;
+}
+#brand .brand_line {
+    margin-top: 4.479vw;
+    text-align: center;
+}
+#brand .brand_line img{
+    margin: 0 auto;
+    height: 25px;
+    display: inline-block;
+}
+
+#brand .brand_designer{
+    margin-top: 6.25vw;
+}
+
+#brand .brand_designer .brand_designer_title{
+    font-size: 1.875vw;
+    font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 3.125vw;
+}
+
+#brand .brand_designer .brand_desginer_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#brand .brand_designer .brand_desginer_items_small{
+    display: none;
+}
+
+#brand .brand_designer .brand_desginer_items:nth-of-type(odd) {
+    margin-top: 3.125vw;
+}
+
+.designer_item img{
+    width: 21.875vw;
+    height: 36.458vw;
+}
+
+.designer_item p{
+    font-size: 1.5625vw;
+    font-family: SourceHanSansCN-Light, SourceHanSansCN;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 1.042vw;
+}
+
+
+
+#brand .brand_kol {
+
+}
+
+#brand .brand_kol .brand_kol_title{
+    font-size: 1.875vw;
+    font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 3.125vw;
+    margin-top: 6.25vw;
+}
+
+.brand_kol .brand_kol_box{
+    position: relative;
+    display: block;
+}
+
+.brand_kol .brand_kol_box_small{
+    display: none;
+}
+
+.brand_kol  .brand_kol_box::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*width: 11px;*/
+    width: 0.5729166666666vw;
+    height: 100%;
+    background: url('https://oss.guangmangapp.com/5f3bb0a4-ce3c-43d8-8fcd-50e19ac558a8.png') repeat-y center;
+    background-size: 0.5729166666666vw;
+}
+
+.brand_kol  .brand_kol_box::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.573vw;
+    height: 100%;
+    background: url('https://oss.guangmangapp.com/5f3bb0a4-ce3c-43d8-8fcd-50e19ac558a8.png') repeat-y center;
+    background-size: 0.5729166666666vw;
+}
+
+.brand_kol .brand_kol_box .brand_kol_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.brand_kol .brand_kol_box .brand_kol_items:nth-of-type(even) {
+    margin-top: 3.125vw;
+}
+
+.brand_kol_box .brand_kol_items .kol_item img{
+    width: 19.01vw;
+    height: 19.01vw;
+}
+.brand_kol_box .brand_kol_items .kol_item p{
+    text-align: center;
+    font-size: 1.5625vw;
+    font-family: SourceHanSansCN-Light, SourceHanSansCN;
+    font-weight: 300;
+    margin-top: 0.99vw;
+}
+
+.brand_newmedia .brand_newmedia_title{
+    font-size: 1.875vw;
+    font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 3.125vw;
+    margin-top: 6.25vw;
+}
+
+.brand_newmedia .brand_newmedia_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.brand_newmedia_items .newmedia_item img{
+    width: 13.958vw;
+    height: 30.208vw;
+}
+
+.brand_newmedia_items .newmedia_item p{
+    text-align: center;
+    font-size: 1.5625vw;
+    font-family: SourceHanSansCN-Light, SourceHanSansCN;
+    font-weight: 300;
+    margin-top: 1.09375vw;
+}
+

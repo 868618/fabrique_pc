@@ -1,0 +1,170 @@
+
+.fabrique_app * {
+    box-sizing: border-box;
+}
+.fabrique_app{
+    /*background: red;*/
+}
+
+.fabrique_app .fabrique_app_header{
+    /*height: 34.0625vh;*/
+    text-align: center;
+    background-color: #EDF0F0;
+    padding-top: 6.25vh;
+    box-sizing: border-box;
+}
+
+.fabrique_app .fabrique_app_header .fabrique_app_title{
+    color: #031C24;
+    font-size: 3.75vw;
+    font-family: OggText-Light, OggText;
+    font-weight: 300;
+}
+
+.fabrique_app .fabrique_app-subname {
+    text-align: center;
+    margin-top: 5.0520833333vw;
+}
+.fabrique_app .fabrique_app-subname img {
+    height: 25px;
+}
+
+.fabrique_app .fabrique_app-slogan{
+    font-weight: 300;
+    color: #031C24;
+    margin-top: 6.875vw;
+    padding-bottom: 8.542vw;
+    font-size: 1.5625vw;
+    font-family: SourceHanSansCN-Light, SourceHanSansCN;
+    font-weight: 300;
+}
+
+.fabrique_app .fabrique_app_item_left{
+    height: 38.541666666666vw;
+    background-color: #031C24;
+    color: #FFFFFF;
+    display: flex;
+    align-items: stretch;
+}
+
+.fabrique_app .fabrique_app_item_left .left_left_item{
+    width: 54%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.fabrique_app .fabrique_app_item_left .left_left_item .text-item{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.left_left_item .text-item .text-item-title{
+    font-size: 3.125vw;
+    line-height: 1;
+    font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+    font-weight: bold;
+}
+
+.left_left_item .text-item .line{
+    /*width: 6.927083vw;*/
+    width: 7vw;
+    height: 2px;
+    display: block;
+    margin-top: 3.125vw;
+    background: url(https://oss.guangmangapp.com/7ddd5c8a-64d9-4e70-8762-daca7564c034.png) repeat-x center;
+}
+
+.left_left_item .text-item .text-item-contain{
+    font-size: 1.5625vw;
+    font-weight: 300;
+    color: #FFFFFF;
+    line-height: 2.34375vw;
+    margin-top: 2.34375vw;
+    text-align: right;
+}
+
+.left_left_item .text-item .text-item-contain p{
+    margin-top: 0.78125vw;
+}
+
+.fabrique_app .fabrique_app_item_left .left_right_item{
+    width: 46%;
+    position: relative;
+}
+
+
+.fabrique_app .fabrique_app_item_left .left_right_item img{
+    width: 18.333333vw;
+    display: inline-block;
+    position: absolute;
+    left: 6.45833vw;
+    bottom: -3.8541666vw;
+}
+
+
+
+
+.fabrique_app .fabrique_app_item_right{
+    height: 38.541666666666vw;
+    color: #031C24;
+    display: flex;
+    align-items: stretch;
+    background-color: #EDF0F0;
+}
+
+.fabrique_app .fabrique_app_item_right .right_left_item{
+    width: 45.9%;
+    position: relative;
+}
+
+
+
+.fabrique_app .fabrique_app_item_right .right_left_item img{
+    width: 18.333333vw;
+    display: inline-block;
+    position: absolute;
+    right: 6.45833vw;
+    bottom: -3.8541666vw;
+}
+
+.fabrique_app .fabrique_app_item_right .right_right_item{
+    width: 54.1%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.right_right_item .text-item{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #031C24;
+}
+
+.right_right_item .text-item .text-item-title {
+    font-size: 3.125vw;
+    line-height: 1;
+    font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+    font-weight: bold;
+}
+
+.right_right_item .text-item .line{
+    width: 7vw;
+    height: 2px;
+    display: block;
+    margin-top: 3.125vw;
+    background: url(https://oss.guangmangapp.com/7ddd5c8a-64d9-4e70-8762-daca7564c034.png) repeat-x center;
+}
+
+.right_right_item .text-item .text-item-contain{
+    font-size: 1.5625vw;
+    font-family: SourceHanSansCN-Light, SourceHanSansCN;
+    font-weight: 300;
+    line-height: 2.34375vw;
+    margin-top: 2.34375vw;
+    text-align: left;
+}

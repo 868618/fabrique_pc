@@ -1,0 +1,89 @@
+.container {
+  width: 1180px;
+  margin: 0 auto;
+}
+.col-lg-12 {
+  grid-column: span 12;
+}
+.col-lg-11 {
+  grid-column: span 11;
+}
+.col-lg-10 {
+  grid-column: span 10;
+}
+.col-lg-9 {
+  grid-column: span 9;
+}
+.col-lg-8 {
+  grid-column: span 8;
+}
+.col-lg-7 {
+  grid-column: span 7;
+}
+.col-lg-6 {
+  grid-column: span 6;
+}
+.col-lg-5 {
+  grid-column: span 5;
+}
+.col-lg-4 {
+  grid-column: span 4;
+}
+.col-lg-3 {
+  grid-column: span 3;
+}
+.col-lg-2 {
+  grid-column: span 2;
+}
+.col-lg-1 {
+  grid-column: span 1;
+}
+
+.nav-wrap {
+  width: 80%;
+}
+.logo-solgan {
+  width: 468px;
+  top: 30%;
+}
+.solgan {
+  font-size: 22px;
+}
+
+.box {
+  padding: 0 110px 112px;
+}
+.box-item img {
+  width: 40%;
+}
+.prospect h2,
+.value h2,
+.character h2 {
+  font-family: Source;
+  font-size: 72px;
+  font-weight: 700;
+}
+.prospect p,
+.value p,
+.character p {
+  font-size: 30px;
+  padding: 10px 0;
+}
+.prospect h6,
+.value h6,
+.character h6 {
+  font-size: 36px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-family: 'Ogg';
+}
+.prospect h6:nth-of-type(1),
+.value h6:nth-of-type(1),
+.character h6:nth-of-type(1) {
+  font-size: 36px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-family: 'Ogg';
+}

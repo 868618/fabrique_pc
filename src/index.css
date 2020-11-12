@@ -1,0 +1,25 @@
+@import url(./style/reset.css);
+@import url(./style/common.css);
+@import url(./style/small-x.css) only screen and (max-width: 768px);
+@import url(./style/small.css) only screen and (min-width: 768px);
+@import url(./style/medium.css) only screen and (min-width: 960px);
+@import url(./style/big.css) only screen and (min-width: 1200px);
+/* @import url(./style/biger.css) only screen and (min-width: 1200px); */
+
+/*@font-face {*/
+/*  font-family: 'Source';*/
+/*  src: url("./font/Source/SourceHanSansCN-Bold.otf"),*/
+/*  url("./font/Source/SourceHanSansCN-Regular.otf"),*/
+/*  url("./font/Source/SourceHanSansCN-Light.otf");*/
+/*}*/
+body {
+  margin: 0;
+  font-family: 'Source';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

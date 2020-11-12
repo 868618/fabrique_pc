@@ -1,0 +1,153 @@
+#brand, #brand *{
+    box-sizing: border-box;
+}
+#brand{
+    background-color: #031C24;
+    color: #FFF;
+    overflow: hidden;
+    padding: 0 27px;
+}
+
+#brand .brand_title{
+    font-size: 45px;
+    font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 500;
+}
+
+#brand .brand_line {
+    margin-top: 42px;
+    text-align: center;
+}
+#brand .brand_line img{
+    margin: 0 auto;
+    height: 11px;
+    display: inline-block;
+}
+
+#brand .brand_designer{
+    margin-top: 41px;
+
+}
+
+#brand .brand_designer .brand_designer_title{
+    font-size: 18px;
+    font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+    font-weight: 500;
+}
+
+#brand .brand_designer .brand_desginer_items{
+    display: none;
+}
+
+#brand .brand_designer .brand_desginer_items_small{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.brand_desginer_items_small .designer_item{
+    width: 150px;
+}
+
+
+.brand_desginer_items_small .designer_item img{
+    width: 150px;
+    height: 250px;
+    display: inline-block;
+}
+.brand_desginer_items_small .designer_item p{
+    text-align: center;
+    font-size: 15px;
+    font-family: SourceHanSansCN-Light, SourceHanSansCN;
+    font-weight: 300;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+#brand .brand_kol{
+    margin-top: 41px;
+}
+
+#brand .brand_kol .brand_kol_title{
+    font-size: 18px;
+    font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+    font-weight: 500;
+}
+
+
+#brand .brand_kol .brand_kol_box {
+    display: none;
+}
+
+#brand .brand_kol .brand_kol_box_small {
+    display: block;
+}
+
+#brand .brand_kol .brand_kol_box_small .brand_kol_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#brand .brand_kol .brand_kol_box_small .brand_kol_items .kol_item{
+    width: 150px;
+}
+
+#brand .brand_kol .brand_kol_box_small .brand_kol_items .kol_item img{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+#brand .brand_kol .brand_kol_box_small .brand_kol_items .kol_item p{
+    line-height: 1;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: SourceHanSansCN-Light, SourceHanSansCN;
+    font-weight: 300;
+    text-align: center;
+}
+
+#brand .brand_newmedia{
+    margin-top: 41px;
+}
+
+.brand_newmedia .brand_newmedia_title{
+    font-size: 18px;
+    font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+    font-weight: 500;
+}
+
+.brand_newmedia .brand_newmedia_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.brand_newmedia .brand_newmedia_items .newmedia_item{
+    margin-top: 30px;
+}
+
+.brand_newmedia_items .newmedia_item img{
+    width: 133px;
+    height: 289px;
+}
+
+.brand_newmedia_items .newmedia_item p{
+    text-align: center;
+    font-size: 15px;
+    /*font-family: SourceHanSansCN-Light, SourceHanSansCN;*/
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+.brand_desginer_items {
+    display: none;
+}
+
+

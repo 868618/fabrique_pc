@@ -1,0 +1,137 @@
+.fabrique_app{
+    /*background: red;*/
+}
+
+.fabrique_app .fabrique_app_header{
+    text-align: center;
+    background-color: #EDF0F0;
+    padding-top: 50px;
+    box-sizing: border-box;
+    height: 260px;
+}
+
+.fabrique_app .fabrique_app_header .fabrique_app_title{
+    font-size: 45px;
+    font-family: OggText-Light, OggText;
+    font-weight: 300;
+    color: #031C24;
+}
+
+.fabrique_app .fabrique_app-subname {
+    text-align: center;
+    margin-top: 33px;
+    height: 13px;
+}
+.fabrique_app .fabrique_app-subname img {
+    width: 100px;
+    height: 13px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.fabrique_app .fabrique_app-slogan{
+    font-size: 15px;
+    font-family: SourceHanSansCN-Light, SourceHanSansCN;
+    font-weight: 300;
+    color: #031C24;
+    margin-top: 40px;
+}
+
+.fabrique_app .fabrique_app_item_left {
+    display: flex;
+    flex-direction: column-reverse;
+    color: #FFFFFF;
+    background-color: #031C24;
+    /*padding: 50px 0;*/
+    padding-top: 50px;
+}
+.fabrique_app .fabrique_app_item_left .left_left_item{
+    padding-left: 28px;
+    margin-top: 42px;
+}
+
+.fabrique_app .fabrique_app_item_left .left_left_item .text-item-title{
+    max-width: 300px;
+    font-size: 30px;
+    font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+    font-weight: 500;
+}
+
+.fabrique_app .fabrique_app_item_left .left_left_item .line{
+    display: block;
+    height: 1px;
+    width: 65px;
+    margin-top: 30px;
+    background: url(https://oss.guangmangapp.com/7ddd5c8a-64d9-4e70-8762-daca7564c034.png) repeat-x center;
+    background-size: 100%;
+}
+
+.fabrique_app .fabrique_app_item_left .left_left_item .text-item-contain {
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: SourceHanSansCN-Light, SourceHanSansCN;
+    font-weight: 300;
+    line-height: 23px;
+    min-height: 100px;
+}
+
+
+
+
+.fabrique_app .fabrique_app_item_left .left_right_item{
+    margin: 0 auto;
+
+}
+
+.fabrique_app .fabrique_app_item_left .left_right_item img{
+    width: 176px;
+}
+
+.fabrique_app .fabrique_app_item_right{
+    /*display: none;*/
+    background-color: #EDF0F0;
+    display: flex;
+    flex-direction: column;
+    /*padding: 50px 0;*/
+    padding-top: 50px;
+}
+
+.fabrique_app .fabrique_app_item_right .right_left_item{
+    width: 176px;
+    margin: 0 auto;
+}
+.fabrique_app .fabrique_app_item_right img{
+    width: 100%;
+}
+
+.fabrique_app .fabrique_app_item_right .right_right_item{
+    /*text-align: center;*/
+    padding-left: 28px;
+    margin-top: 42px;
+}
+
+.fabrique_app .fabrique_app_item_right .right_right_item .text-item-title{
+    max-width: 300px;
+    font-size: 30px;
+    font-family: SourceHanSansCN-Bold, SourceHanSansCN;
+    font-weight: 500;
+}
+
+.fabrique_app .fabrique_app_item_right .right_right_item .line{
+    display: block;
+    height: 1px;
+    width: 65px;
+    margin-top: 30px;
+    background: url(https://oss.guangmangapp.com/7ddd5c8a-64d9-4e70-8762-daca7564c034.png) repeat-x center;
+    background-size: 100%;
+}
+
+
+.fabrique_app .fabrique_app_item_right .right_right_item .text-item-contain {
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: SourceHanSansCN-Light, SourceHanSansCN;
+    font-weight: 300;
+    line-height: 23px;
+    min-height: 100px;
+}

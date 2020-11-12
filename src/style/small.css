@@ -1,0 +1,92 @@
+:root {
+  font-size: 20px;
+}
+.row {
+  width: 90%;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.col-sm-12 {
+  grid-column: span 12;
+}
+
+.col-sm-11 {
+  grid-column: span 11;
+}
+
+.col-sm-10 {
+  grid-column: span 10;
+}
+
+.col-sm-9 {
+  grid-column: span 9;
+}
+
+.col-sm-8 {
+  grid-column: span 8;
+}
+
+.col-sm-7 {
+  grid-column: span 7;
+}
+
+.col-sm-6 {
+  grid-column: span 6;
+}
+
+.col-sm-5 {
+  grid-column: span 5;
+}
+
+.col-sm-4 {
+  grid-column: span 4;
+}
+
+.col-sm-3 {
+  grid-column: span 3;
+}
+
+.col-sm-2 {
+  grid-column: span 2;
+}
+
+.col-sm-1 {
+  grid-column: span 1;
+}
+
+.logo-solgan {
+  width: 350px;
+  top: 20%;
+}
+
+.solgan {
+  font-size: 16px;
+  margin: 25px auto 0;
+}
+.box {
+  padding: 0 25px 95px;
+}
+.box-item img {
+  width: 45%;
+}
+.prospect h2,
+.value h2,
+.character h2 {
+  font-size: 40px;
+}
+.prospect p,
+.value p,
+.character p {
+  font-size: 22px;
+}
+.prospect h6,
+.value h6,
+.character h6 {
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-weight: 400;
+}

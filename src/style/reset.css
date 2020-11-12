@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Source';
+  src: url("../font/Source/SourceHanSansCN-Bold.otf");
+  /*src: url("../font/newsource/KaiGenGothicSC-Bold.ttf");*/
+}
+
+@font-face {
+    font-family: 'SourceRegular';
+    src: url("../font/Source/SourceHanSansCN-Regular.otf");
+    /*src: url("../font/newsource/KaiGenGothicSC-Regular.ttf");*/
+}
+
+@font-face {
+    font-family: 'SourceLight';
+    src: url("../font/Source/SourceHanSansCN-Light.otf");
+    /*src: url("../font/newsource/KaiGenGothicSC-Light.ttf");*/
+}
+
+@font-face {
+  font-family: 'Ogg';
+    src: url("../font/Ogg/OggText-Light.ttf");
+}
+
+@font-face {
+    font-family: 'MontserratLighter';
+    src: url("../font/Montserrat/Montserrat-Light.otf")
+}
+
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url("../font/Montserrat/Montserrat-Regular.otf")
+}
