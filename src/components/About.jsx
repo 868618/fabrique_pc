@@ -26,7 +26,7 @@ function About() {
       <div className='box'>
         <div className='box-item'>
           <img
-            src='http://oss.cogo.club/ed79331e-c636-4caf-ae4d-0f435b9be63a.png'
+            src='https://oss.fabrique.cn/ed79331e-c636-4caf-ae4d-0f435b9be63a.png'
             alt=''
             className='img1'
           />
@@ -59,14 +59,14 @@ function About() {
             <p style={ordinary}>{intl.get('value.nine')}</p>
           </div>
           <img
-            src='http://oss.cogo.club/f3e75325-94ec-4ed2-be0e-8c125fa267a1.png'
+            src='https://oss.fabrique.cn/f3e75325-94ec-4ed2-be0e-8c125fa267a1.png'
             alt=''
             className='img2'
           />
         </div>
         <div className='box-item'>
           <img
-            src='http://oss.cogo.club/a3fae6f0-2ac8-4661-9bde-1c21660534ae.png'
+            src='https://oss.fabrique.cn/a3fae6f0-2ac8-4661-9bde-1c21660534ae.png'
             alt=''
             className='img3'
           />

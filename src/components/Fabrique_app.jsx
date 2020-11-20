@@ -52,13 +52,13 @@ function Fabrique_app() {
                     </div>
                 </div>
                 <div className='left_right_item'>
-                    <img src="http://oss.cogo.club/6fb3b97c-4cff-4b43-8d09-91bc8af4f7a6.png" alt=""/>
+                    <img src="https://oss.fabrique.cn/6fb3b97c-4cff-4b43-8d09-91bc8af4f7a6.png" alt=""/>
                 </div>
             </div>
 
             <div className='fabrique_app_item_right'>
                 <div className='right_left_item'>
-                    <img src="http://oss.cogo.club/e5941b05-cf95-48a2-a8fc-f73b2c6a724b.png" alt=""/>
+                    <img src="https://oss.fabrique.cn/e5941b05-cf95-48a2-a8fc-f73b2c6a724b.png" alt=""/>
                 </div>
                 <div className='right_right_item'>
                     <div className='text-item'>
@@ -82,13 +82,13 @@ function Fabrique_app() {
                     </div>
                 </div>
                 <div className='left_right_item'>
-                    <img src="http://oss.cogo.club/853f2f2f-786d-4950-a36a-41bceb0c6ca6.png" alt=""/>
+                    <img src="https://oss.fabrique.cn/853f2f2f-786d-4950-a36a-41bceb0c6ca6.png" alt=""/>
                 </div>
             </div>
 
             <div className='fabrique_app_item_right'>
                 <div className='right_left_item'>
-                    <img src="http://oss.cogo.club/7da25605-8cbd-4c4c-be62-2dc9844c0cc1.png" alt=""/>
+                    <img src="https://oss.fabrique.cn/7da25605-8cbd-4c4c-be62-2dc9844c0cc1.png" alt=""/>
                 </div>
                 <div className='right_right_item'>
                     <div className='text-item'>

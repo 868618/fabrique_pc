@@ -33,21 +33,21 @@ function Footer() {
         </div>
         <div className='contact-code'>
           <img
-            src='http://oss.cogo.club/462d5195-9d15-402f-81bd-60b6eea837f1.png'
+            src='https://oss.fabrique.cn/462d5195-9d15-402f-81bd-60b6eea837f1.png'
             alt=''
           />
           <p>{intl.get('Wechat')}</p>
         </div>
         <div className='contact-code'>
           <img
-            src='http://oss.cogo.club/2b72e5a7-cfa8-4043-8c05-47551c1b0cee.png'
+            src='https://oss.fabrique.cn/2b72e5a7-cfa8-4043-8c05-47551c1b0cee.png'
             alt=''
           />
           <p>{intl.get('Android')}</p>
         </div>
         <div className='contact-code'>
           <img
-            src='http://oss.cogo.club/db927119-8934-482d-8330-facca2c2f7f9.png'
+            src='https://oss.fabrique.cn/db927119-8934-482d-8330-facca2c2f7f9.png'
             alt=''
           />
           <p>{intl.get('IOS')}</p>
