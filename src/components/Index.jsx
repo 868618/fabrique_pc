@@ -5,6 +5,7 @@ import Business from "./Business";
 import Fabrique_app from "./Fabrique_app";
 import Brand from "./Brand";
 import Footer from "./Footer";
+import Home from './Home'
 import intl from "react-intl-universal";
 
 
@@ -132,18 +133,12 @@ class Index extends React.Component {
         return (
             <>
                 <div className='App'>
-                    <Banner
-                        changeLang={this.changeLang}
-                        links={this.state.links}
-                        handleClick={this.handleClick}
-                    />
-                    {/*<Nav />*/}
-                    {/*<Home />*/}
+                    <Banner changeLang={this.changeLang} links={this.state.links} handleClick={this.handleClick} />
+                    <Home />
                     <About />
                     <Business />
                     <Fabrique_app />
                     <Brand />
-                    {/*<Medium />*/}
                     <Footer />
                 </div>
             </>

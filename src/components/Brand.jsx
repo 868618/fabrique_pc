@@ -9,6 +9,7 @@ import '../style/brand/index.scss'
 import { withRouter } from 'react-router-dom'
 // eslint-disable-next-line no-unused-expressions
 import('../style/brand/index.css')
+import _lodash from 'lodash'
 
 const Brand = (props) => {
     const family = intl.options.currentLocale == 'zh' ? 'Source' : 'Ogg'
@@ -25,56 +26,59 @@ const Brand = (props) => {
     }
     const list = [
         {
-            face: "https://oss.fabrique.cn/5a46181a-cdb9-4fa3-8bf1-ede447738466.jpg",
+            face: "https://oss.fabrique.cn/84749a97-7986-40aa-89fb-2dcbf3ef3f82.jpg",
             back: "https://oss.fabrique.cn/6fa89592-b0a2-4bd8-8e15-3de8f93a88d5.jpg",
             name: "Stephane Rolland"
         },
         {
-            face: "https://oss.fabrique.cn/b6bf4fd0-4f55-45bf-86b0-e2c1a209b6f6.jpg",
+            face: "https://oss.fabrique.cn/260bc3f0-0114-461e-9803-ad0f3060643a.jpg",
             back: "https://oss.fabrique.cn/ef4b0578-3eb9-431e-af8f-0f115062fbb2.jpg",
             name: "Philippe Perisse"
         },
         {
-            face: "https://oss.fabrique.cn/88965ff2-a272-4dd5-95ed-b1b2e14a5dfc.jpg",
+            face: "https://oss.fabrique.cn/120f9e5d-68d4-4522-ae2f-a2e6562ca2f3.jpg",
             back: "https://oss.fabrique.cn/40f34fc3-8f64-4b6d-9c32-2c4a88b67778.jpg",
             name: "Alex Rotin"
         },
         {
-            face: "https://oss.fabrique.cn/bb33e25e-dfae-4324-bef9-aef86541a9e2.jpg",
+            face: "https://oss.fabrique.cn/eb75c81b-1b52-4686-95d0-9acd42c36a76.jpg",
             back: "https://oss.fabrique.cn/566a7dc2-488a-4dbb-b017-1236ab7e2043.jpg",
             name: "Pascal Millet"
         },
         {
-            face: "https://oss.fabrique.cn/86e9c76d-8ccf-48dd-ab8a-21d63559cb79.jpg",
+            face: "https://oss.fabrique.cn/712773c7-6e0d-456e-bcc8-129e9ac30303.jpg",
             back: "https://oss.fabrique.cn/66166e83-04d5-49ef-8c17-b6500bfae226.jpg",
             name: "Carlos Campos"
         },
         {
-            face: "https://oss.fabrique.cn/f243e8a8-16e3-4c32-a4e1-ba057f9677f2.jpg",
+            face: "https://oss.fabrique.cn/14b455b2-017f-4d57-8318-2ba7345db97e.jpg",
             back: "https://oss.fabrique.cn/9be08f40-8dbc-44f1-8769-77603d614579.jpg",
             name: "Lee Seong Dong"
         },
         {
-            face: "https://oss.fabrique.cn/341a757d-4249-4b36-8a9e-b9764ac0e37f.jpg",
+            face: "https://oss.fabrique.cn/35f43f28-bc65-4b06-9a35-84ff13d680a5.jpg",
             back: "https://oss.fabrique.cn/f9551f19-a682-4d34-a9a1-012b3bff1bb2.jpg",
             name: "Cosima Christa"
         },
         {
-            face: "https://oss.fabrique.cn/aae94313-f24d-4fbe-b214-971ec813c54e.jpg",
+            face: "https://oss.fabrique.cn/7c329b0e-e694-4446-bde8-9553bdd0fe74.jpg",
             back: "https://oss.fabrique.cn/6c536518-49fa-4dc8-85fd-037d9c013b81.jpg",
             name: "XUZHI"
         },
         {
-            face: "https://oss.fabrique.cn/5d257807-aaca-43a2-a4ae-86af2c152a26.jpg",
+            face: "https://oss.fabrique.cn/44526690-afdf-4818-a1a4-bd2a5bec7695.jpg",
             back: "https://oss.fabrique.cn/df4cfd4b-1f1c-43e4-a739-f304e57f030b.jpg",
             name: "Joash Teo"
         },
         {
-            face: "https://oss.fabrique.cn/c655b072-e620-417b-8254-063cac72ad2f.jpg",
+            face: "https://oss.fabrique.cn/7bb0b488-3e98-45cd-9b68-e7eb8e45c630.jpg",
             back: "https://oss.fabrique.cn/e168c869-4f41-4504-9910-c6027f183bf3.jpg",
             name: "Vivienne Tam"
         }
     ]
+
+    const chunks = _lodash.chunk(list, 2)
+    console.log('chunks', chunks)
     const [instanceSwiper, initSwiper] = useState(null)
     useEffect(() => {
 
@@ -142,43 +146,19 @@ const Brand = (props) => {
                 <section className="brand_designer">
                     <header className="brand_designer_title" style={style}>{intl.get('desginer')}</header>
 
-                    <div className="brand_desginer_items_small">
-                        <figure className="designer_item">
-                            <img src="https://oss.fabrique.cn/1bc3ec70-2e9c-4843-a116-493f68e9df53.png" />
-                            <p style={style3}>Stephane Rolland</p>
-                            <p>查看更多</p>
-                        </figure>
-
-                        <figure className="designer_item">
-                            <img src="https://oss.fabrique.cn/a590ed4b-5faa-44ed-9072-07a5eb8d1299.png" />
-                            <p style={style3}>Pascal Millet</p>
-                            <p>查看更多</p>
-                        </figure>
-                    </div>
-
-                    <div className="brand_desginer_items_small">
-                        <figure className="designer_item">
-                            <img src="https://oss.fabrique.cn/8a0e6870-2c1b-42b5-ae62-b6d729412358.png" />
-                            <p style={style3}>Vivienne Tam</p>
-                        </figure>
-
-                        <figure className="designer_item">
-                            <img src="https://oss.fabrique.cn/26bd3d47-8b55-48b1-b782-1e7f7f09a05d.png" />
-                            <p style={style3}>{intl.get('chenxuzhi')}</p>
-                        </figure>
-                    </div>
-
-                    <div className="brand_desginer_items_small">
-                        <figure className="designer_item">
-                            <img src="https://oss.fabrique.cn/06d5b13e-d2c4-4c3a-bf8e-25c1300d283f.png" />
-                            <p style={style3}>Jean Paul Knott</p>
-                        </figure>
-
-                        <figure className="designer_item">
-                            <img src="https://oss.fabrique.cn/8d3987be-a593-4e38-9b43-20b5edc800b8.png" />
-                            <p style={style3}>Lee Seong Dong</p>
-                        </figure>
-                    </div>
+                    { chunks.map((item, index) => {
+                        return (
+                            <div className="brand_desginer_items_small" key={index}>
+                                {item.map((it, idx) => (
+                                    <figure className="designer_item" key={idx}>
+                                        <img src={it.face} />
+                                        <p style={style3}>{it.name}</p>
+                                        <p>查看更多 <img src="https://oss.fabrique.cn/c722e06f-e05b-49b0-97c0-176165d775d0.png" alt=""/></p>
+                                    </figure>
+                                ))}
+                            </div>
+                        )
+                    }) }
 
 
                     <div className="brand_desginer_items">
