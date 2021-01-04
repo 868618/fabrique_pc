@@ -5,11 +5,12 @@ import Medium from './Medium';
 import Swiper from 'swiper'
 import 'swiper/swiper-bundle.css';
 import '../style/brand/index.scss'
+import list from '../asset/desginers'
 
 import { withRouter } from 'react-router-dom'
+import _lodash from 'lodash'
 // eslint-disable-next-line no-unused-expressions
 import('../style/brand/index.css')
-import _lodash from 'lodash'
 
 const Brand = (props) => {
     const family = intl.options.currentLocale == 'zh' ? 'Source' : 'Ogg'
@@ -24,61 +25,8 @@ const Brand = (props) => {
     const style3 = {
         fontFamily: family2
     }
-    const list = [
-        {
-            face: "https://oss.fabrique.cn/84749a97-7986-40aa-89fb-2dcbf3ef3f82.jpg",
-            back: "https://oss.fabrique.cn/6fa89592-b0a2-4bd8-8e15-3de8f93a88d5.jpg",
-            name: "Stephane Rolland"
-        },
-        {
-            face: "https://oss.fabrique.cn/260bc3f0-0114-461e-9803-ad0f3060643a.jpg",
-            back: "https://oss.fabrique.cn/ef4b0578-3eb9-431e-af8f-0f115062fbb2.jpg",
-            name: "Philippe Perisse"
-        },
-        {
-            face: "https://oss.fabrique.cn/120f9e5d-68d4-4522-ae2f-a2e6562ca2f3.jpg",
-            back: "https://oss.fabrique.cn/40f34fc3-8f64-4b6d-9c32-2c4a88b67778.jpg",
-            name: "Alex Rotin"
-        },
-        {
-            face: "https://oss.fabrique.cn/eb75c81b-1b52-4686-95d0-9acd42c36a76.jpg",
-            back: "https://oss.fabrique.cn/566a7dc2-488a-4dbb-b017-1236ab7e2043.jpg",
-            name: "Pascal Millet"
-        },
-        {
-            face: "https://oss.fabrique.cn/712773c7-6e0d-456e-bcc8-129e9ac30303.jpg",
-            back: "https://oss.fabrique.cn/66166e83-04d5-49ef-8c17-b6500bfae226.jpg",
-            name: "Carlos Campos"
-        },
-        {
-            face: "https://oss.fabrique.cn/14b455b2-017f-4d57-8318-2ba7345db97e.jpg",
-            back: "https://oss.fabrique.cn/9be08f40-8dbc-44f1-8769-77603d614579.jpg",
-            name: "Lee Seong Dong"
-        },
-        {
-            face: "https://oss.fabrique.cn/35f43f28-bc65-4b06-9a35-84ff13d680a5.jpg",
-            back: "https://oss.fabrique.cn/f9551f19-a682-4d34-a9a1-012b3bff1bb2.jpg",
-            name: "Cosima Christa"
-        },
-        {
-            face: "https://oss.fabrique.cn/7c329b0e-e694-4446-bde8-9553bdd0fe74.jpg",
-            back: "https://oss.fabrique.cn/6c536518-49fa-4dc8-85fd-037d9c013b81.jpg",
-            name: "XUZHI"
-        },
-        {
-            face: "https://oss.fabrique.cn/44526690-afdf-4818-a1a4-bd2a5bec7695.jpg",
-            back: "https://oss.fabrique.cn/df4cfd4b-1f1c-43e4-a739-f304e57f030b.jpg",
-            name: "Joash Teo"
-        },
-        {
-            face: "https://oss.fabrique.cn/7bb0b488-3e98-45cd-9b68-e7eb8e45c630.jpg",
-            back: "https://oss.fabrique.cn/e168c869-4f41-4504-9910-c6027f183bf3.jpg",
-            name: "Vivienne Tam"
-        }
-    ]
 
-    const chunks = _lodash.chunk(list, 2)
-    console.log('chunks', chunks)
+    const [ chunks ] = useState(_lodash.chunk(list, 2))
     const [instanceSwiper, initSwiper] = useState(null)
     useEffect(() => {
 
@@ -91,13 +39,20 @@ const Brand = (props) => {
                 loop: true,
                 on: {
                     tap(swiper) {
-                        console.log(props)
+                        const { realIndex } = swiper
+                        const href = window.location.href.split('/#/')[0]
+                        console.log('window.location***********------------', href)
+                        window.location.href = href + `/#/detail?index=${realIndex}`
+                        // props.history.push({
+                        //     pathname: '/detail',
+                        //     search: `index=${realIndex}`
+                        // })
                     }
                 }
             }))
             instanceSwiper && instanceSwiper.update()
         }, 0)
-    })
+    }, [])
 
     const [bars] = useState([
         'https://oss.fabrique.cn/f713f2e0-17b7-4fe2-9b43-9cae37670589.png',
@@ -150,7 +105,12 @@ const Brand = (props) => {
                         return (
                             <div className="brand_desginer_items_small" key={index}>
                                 {item.map((it, idx) => (
-                                    <figure className="designer_item" key={idx}>
+                                    <figure className="designer_item" key={idx} onClick={() => {
+                                        props.history.push({
+                                            pathname: '/detail',
+                                            search: `index=${ it.index }`
+                                        })
+                                    }}>
                                         <img src={it.face} />
                                         <p style={style3}>{it.name}</p>
                                         <p>查看更多 <img src="https://oss.fabrique.cn/c722e06f-e05b-49b0-97c0-176165d775d0.png" alt=""/></p>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Detail from './subpages/desginer'
+import Detail from './subpages/detail'
 import Index from './components/Index'
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Resize from './context/Resize'

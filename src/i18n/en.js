@@ -1,4 +1,5 @@
 import FABRIQUE_EN from './en/fabrique_app'
+import DETAIL from './en/detail'
 export default {
   MSG: 'hello world',
   'B.HTML': '<b>I am b tag<b>',
@@ -111,5 +112,6 @@ export default {
   Address: 'Room2102, Sanlitun SOHO, Building2, Chaoyang District, Beijing',
   zhoubian: 'Merchandise',
   chenxuzhi: "Xuzhi Chen",
-  ...FABRIQUE_EN
+  ...FABRIQUE_EN,
+  ...DETAIL
 };

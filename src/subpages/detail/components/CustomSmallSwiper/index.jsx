@@ -1,9 +1,11 @@
-import React, {useEffect, useState, useContext} from "react";
+import React, {useEffect, useState, useContext, useMemo} from "react";
 import Resize from "../../../../context/Resize";
 import Swiper from 'swiper'
 import 'swiper/swiper-bundle.css'
+import { withRouter } from 'react-router-dom'
 
-const CustomSmallSwiper = ({list}) => {
+const CustomSmallSwiper = (props) => {
+    console.log('props', props)
     const { clientWidth  } = useContext(Resize)
     const [swiper, setSwiper] = useState(null)
     useEffect(() => {
@@ -27,7 +29,7 @@ const CustomSmallSwiper = ({list}) => {
 
                 <div className="swiper-container container">
                     <div className="swiper-wrapper">
-                        { list.map((item, index) => (<div className="swiper-slide item" key={index}><img alt='' src={item.face} /></div>)) }
+                        { props.list.opus.map((item, index) => (<div className="swiper-slide item" key={index}><img alt='' src={item.src} /></div>)) }
                     </div>
                 </div>
 
@@ -67,4 +69,4 @@ const CustomSmallSwiper = ({list}) => {
     )
 }
 
-export default CustomSmallSwiper
+export default withRouter(CustomSmallSwiper)

@@ -32,15 +32,13 @@ const CustomSwiper = (props, ref) => {
         })
         // eslint-disable-next-line
     }, [])
-    useImperativeHandle(ref, () => ({
-        swiper
-    }))
+    useImperativeHandle(ref, () => ({ swiper }))
     return (
         <>
             <div className="custom_big_swiper_box">
                 <div className="swiper-container custombigswiper">
                     <div className="swiper-wrapper">
-                        { props.list.map((item, index) => (<div className="swiper-slide item" key={index}><img src={item.face} alt=""/></div>)) }
+                        { props.list.opus.map((item, index) => (<div className="swiper-slide item" key={index}><img src={item.src} alt=""/></div>)) }
                     </div>
                 </div>
             </div>

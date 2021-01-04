@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import classnames from 'classnames';
 import intl from 'react-intl-universal';
-import { withRouter } from 'react-router-dom'
+// import { withRouter } from 'react-router-dom'
 
 function Banner(props) {
   const family =
@@ -16,11 +16,48 @@ function Banner(props) {
     fontFamily: family2,
     fontWeight: intl.options.currentLocale == 'zh' ? 'lighter' : 'lighter'
   };
-  console.log(props);
   const [isShow, setIsShow] = useState(false);
   const Nav = classnames('nav', {
     show: isShow
   });
+  const [links, setLinks] = useState([
+    { title: '首页', hoverTitle: 'HOME', href: '#', hoverStatus: true },
+    {
+      title: '关于我们',
+      hoverTitle: 'About Us',
+      href: '#aboutus',
+      hoverStatus: false
+    },
+    {
+      title: '我们的业务',
+      hoverTitle: 'What We Do',
+      href: '#business',
+      hoverStatus: false
+    },
+    {
+      title: 'Fabrique App',
+      hoverTitle: 'Our App',
+      href: '#fabrique_app',
+      hoverStatus: false
+    },
+    {
+      title: '品牌资源',
+      hoverTitle: 'Brand Resources',
+      href: '#brandandmedia',
+      hoverStatus: false
+    },
+    {
+      title: '联系我们',
+      hoverTitle: 'Contact Us',
+      href: '#contact',
+      hoverStatus: false
+    }
+  ])
+
+  const handleClick = (index) => {
+    setLinks(links.map(((item, idx) => Object.assign(item, {hoverStatus : index == idx}))))
+  }
+
   const navMenu = classnames('nav-menu', { hide: isShow });
   return (
     <div className='banner-wrap' id="banner">
@@ -45,14 +82,15 @@ function Banner(props) {
               alt=''
             />
             <ul>
-              {props.links.map((item, index) => (
+              {links.map((item, index) => (
                 <li key={item.hoverTitle} style={style}>
                   <a
                     href={item.href}
                     className={item.hoverStatus ? 'active' : ''}
                     onClick={() => {
                       setIsShow(false);
-                      props.handleClick(index);
+                      console.log('index', index)
+                      handleClick(index);
                     }}
                   >
                     {intl.options.currentLocale === 'zh' ? item.title : item.hoverTitle}
@@ -83,4 +121,4 @@ function Banner(props) {
   );
 }
 
-export default withRouter(Banner);
+export default Banner;

@@ -1,4 +1,5 @@
 import FABRIQUE_ZH from './zh/fabrique_app'
+import DETAIL from './zh/detail'
 // const FABRIQUE_EN = require('./en/fabrique_app')
 export default {
   MSG: '你好世界',
@@ -93,5 +94,6 @@ export default {
   Address: '北京市朝阳区三里屯SOHO办公B',
   zhoubian: '周边',
   chenxuzhi: "陈序之",
-  ...FABRIQUE_ZH
+  ...FABRIQUE_ZH,
+  ...DETAIL
 };
