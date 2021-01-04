@@ -1,11 +1,16 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import intl from 'react-intl-universal';
-import('../style/brand/index.css')
 
 import Medium from './Medium';
+import Swiper from 'swiper'
+import 'swiper/swiper-bundle.css';
+import '../style/brand/index.scss'
 
-function brand() {
-    const [isShow, setIsShow] = useState(intl.options.currentLocale);
+import { withRouter } from 'react-router-dom'
+// eslint-disable-next-line no-unused-expressions
+import('../style/brand/index.css')
+
+const Brand = (props) => {
     const family = intl.options.currentLocale == 'zh' ? 'Source' : 'Ogg'
     const family2 = intl.options.currentLocale == 'zh' ? 'SourceLight' : 'MontserratLighter'
     const style = {
@@ -15,10 +20,86 @@ function brand() {
     const style2 = {
         fontFamily: 'MontserratLighter'
     }
-
     const style3 = {
         fontFamily: family2
     }
+    const list = [
+        {
+            face: "https://oss.fabrique.cn/5a46181a-cdb9-4fa3-8bf1-ede447738466.jpg",
+            back: "https://oss.fabrique.cn/6fa89592-b0a2-4bd8-8e15-3de8f93a88d5.jpg",
+            name: "Stephane Rolland"
+        },
+        {
+            face: "https://oss.fabrique.cn/b6bf4fd0-4f55-45bf-86b0-e2c1a209b6f6.jpg",
+            back: "https://oss.fabrique.cn/ef4b0578-3eb9-431e-af8f-0f115062fbb2.jpg",
+            name: "Philippe Perisse"
+        },
+        {
+            face: "https://oss.fabrique.cn/88965ff2-a272-4dd5-95ed-b1b2e14a5dfc.jpg",
+            back: "https://oss.fabrique.cn/40f34fc3-8f64-4b6d-9c32-2c4a88b67778.jpg",
+            name: "Alex Rotin"
+        },
+        {
+            face: "https://oss.fabrique.cn/bb33e25e-dfae-4324-bef9-aef86541a9e2.jpg",
+            back: "https://oss.fabrique.cn/566a7dc2-488a-4dbb-b017-1236ab7e2043.jpg",
+            name: "Pascal Millet"
+        },
+        {
+            face: "https://oss.fabrique.cn/86e9c76d-8ccf-48dd-ab8a-21d63559cb79.jpg",
+            back: "https://oss.fabrique.cn/66166e83-04d5-49ef-8c17-b6500bfae226.jpg",
+            name: "Carlos Campos"
+        },
+        {
+            face: "https://oss.fabrique.cn/f243e8a8-16e3-4c32-a4e1-ba057f9677f2.jpg",
+            back: "https://oss.fabrique.cn/9be08f40-8dbc-44f1-8769-77603d614579.jpg",
+            name: "Lee Seong Dong"
+        },
+        {
+            face: "https://oss.fabrique.cn/341a757d-4249-4b36-8a9e-b9764ac0e37f.jpg",
+            back: "https://oss.fabrique.cn/f9551f19-a682-4d34-a9a1-012b3bff1bb2.jpg",
+            name: "Cosima Christa"
+        },
+        {
+            face: "https://oss.fabrique.cn/aae94313-f24d-4fbe-b214-971ec813c54e.jpg",
+            back: "https://oss.fabrique.cn/6c536518-49fa-4dc8-85fd-037d9c013b81.jpg",
+            name: "XUZHI"
+        },
+        {
+            face: "https://oss.fabrique.cn/5d257807-aaca-43a2-a4ae-86af2c152a26.jpg",
+            back: "https://oss.fabrique.cn/df4cfd4b-1f1c-43e4-a739-f304e57f030b.jpg",
+            name: "Joash Teo"
+        },
+        {
+            face: "https://oss.fabrique.cn/c655b072-e620-417b-8254-063cac72ad2f.jpg",
+            back: "https://oss.fabrique.cn/e168c869-4f41-4504-9910-c6027f183bf3.jpg",
+            name: "Vivienne Tam"
+        }
+    ]
+    const [instanceSwiper, initSwiper] = useState(null)
+    useEffect(() => {
+
+        setTimeout(() => {
+            !instanceSwiper && initSwiper(new Swiper('.swiper_box', {
+                slidesPerView: 3,
+                spaceBetween: 56,
+                centeredSlides: true,
+                observer:true,
+                loop: true,
+                on: {
+                    tap(swiper) {
+                        console.log(props)
+                    }
+                }
+            }))
+            instanceSwiper && instanceSwiper.update()
+        }, 0)
+    })
+
+    const [bars] = useState([
+        'https://oss.fabrique.cn/f713f2e0-17b7-4fe2-9b43-9cae37670589.png',
+        'https://oss.fabrique.cn/ed94d111-6e2d-4d19-8a19-2a8fe256bb8e.png'
+    ])
+
     return (
         <div id="brandandmedia">
             <div id="brand" className="brand">
@@ -27,6 +108,37 @@ function brand() {
                     <img src="https://oss.guangmangapp.com/3169ec1d-96da-4fb1-8cac-ecafd2c1717c.png" alt=""/>
                 </div>
 
+                <section className="real_name_desginer">
+                    <div className="bar">
+                        <img src={ bars[0] } onClick={() => instanceSwiper.slidePrev()} alt=""/>
+                    </div>
+                    <div className="swiper-container swiper_box">
+                        <div className="swiper-wrapper">
+                            { list.map((item, index) => (
+                                <div className="swiper-slide swiper_item" key={index}>
+                                    <div className="wutai">
+                                        <div className="wutai_box">
+                                            <div className="card">
+                                                <div className="face">
+                                                    <img src={item.face} alt=""/>
+                                                    <section className='name'>{item.name}</section>
+                                                </div>
+                                                <div className="back">
+                                                    <img src={item.back} alt=""/>
+                                                    <section className='name'>查看更多 <img src="https://oss.fabrique.cn/30ef09bd-63dd-4403-8729-75a3504880de.png" alt=""/></section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )) }
+                        </div>
+                    </div>
+                    <div className="bar">
+                        <img src={ bars[1] } onClick={() => instanceSwiper.slideNext()} alt=""/>
+                    </div>
+                </section>
+
                 <section className="brand_designer">
                     <header className="brand_designer_title" style={style}>{intl.get('desginer')}</header>
 
@@ -34,11 +146,13 @@ function brand() {
                         <figure className="designer_item">
                             <img src="https://oss.fabrique.cn/1bc3ec70-2e9c-4843-a116-493f68e9df53.png" />
                             <p style={style3}>Stephane Rolland</p>
+                            <p>查看更多</p>
                         </figure>
 
                         <figure className="designer_item">
                             <img src="https://oss.fabrique.cn/a590ed4b-5faa-44ed-9072-07a5eb8d1299.png" />
                             <p style={style3}>Pascal Millet</p>
+                            <p>查看更多</p>
                         </figure>
                     </div>
 
@@ -216,4 +330,5 @@ function brand() {
     )
 }
 
-export default brand;
+
+export default withRouter(Brand);

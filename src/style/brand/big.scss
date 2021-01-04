@@ -1,0 +1,107 @@
+.real_name_desginer{
+  height: 38.854vw;
+  margin: 0 -5.208vw;
+  margin-top: 6.354vw;
+  display: flex;
+  .bar{
+    width: 2.604vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:first-of-type{
+      margin-right: 2.604vw;
+    }
+    &:last-of-type{
+      margin-left: 2.604vw;
+    }
+    & > img{
+      width: 2.604vw;
+      height: 5.208vw;
+      cursor: pointer;
+      transition: all .5s;
+      &:hover{
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  .swiper_box{
+    padding-top: 2.604vw;
+    flex: 1;
+    .swiper_item{
+      width: 20.833vw;
+      //width: 21.875vw;
+
+      .wutai {
+        height: 100%;
+        .wutai_box{
+          margin: 0 auto;
+          height: 35.417vw;
+          margin-bottom: 14.0625vw;
+          /* 设置舞台距离 */
+          perspective: 1200px;
+          &:hover {
+            .card {
+              transform: rotateY(180deg);
+            }
+          }
+          .card{
+            width: 100%;
+            height: 100%;
+            transition: .6s;
+            transform: translateZ(0px);
+            position: relative;
+            /* 开启3d */
+            transform-style: preserve-3d;
+
+            & > div{
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              left: 0;
+              top: 0;
+              backface-visibility: hidden;
+              & > img {
+                display: block;
+                width: 100%;
+              }
+
+              & > .name {
+                font-size: 1.5625vw;
+                font-weight: 300;
+                color: #FFFFFF !important;
+                line-height: 1;
+                margin-top: 1.042vw;
+                text-align: center;
+                cursor: pointer;
+                img{
+                  display: inline-block;
+                  width: 0.417vw;
+                  height: 0.521vw;
+                  vertical-align: middle;
+                  opacity: 0;
+                }
+                &:hover {
+                  color: #FC296B !important;
+                  & img {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+
+            .back{
+              transform: rotateY(180deg);
+            }
+            .face{
+              //background-color: blueviolet;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}

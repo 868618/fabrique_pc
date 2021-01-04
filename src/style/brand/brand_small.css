@@ -35,6 +35,7 @@
     font-size: 18px;
     font-family: SourceHanSansCN-Bold, SourceHanSansCN;
     font-weight: 500;
+    display: none;
 }
 
 #brand .brand_designer .brand_desginer_items{

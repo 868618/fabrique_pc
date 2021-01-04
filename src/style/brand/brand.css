@@ -28,6 +28,8 @@
     display: inline-block;
 }
 
+
+
 #brand .brand_designer{
     margin-top: 6.25vw;
 }
@@ -38,12 +40,14 @@
     font-weight: bold;
     color: #FFFFFF;
     margin-bottom: 3.125vw;
+    display: none;
 }
 
 #brand .brand_designer .brand_desginer_items{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    display: none;
 }
 
 #brand .brand_designer .brand_desginer_items_small{

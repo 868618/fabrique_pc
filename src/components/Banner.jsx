@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import classnames from 'classnames';
 import intl from 'react-intl-universal';
+import { withRouter } from 'react-router-dom'
+// 导航拆分
+// import NavTop from './NavTop'
+import Home from './Home'
 
 function Banner(props) {
   const family =
@@ -23,33 +27,36 @@ function Banner(props) {
   const navMenu = classnames('nav-menu', { hide: isShow });
   return (
     <div className='banner-wrap' id="banner">
-      <div className='banner-bg'></div>
-      <video
-        muted
-        id='video'
-        className='banner-bg'
-        src='https://oss.guangmangapp.com/d4a50b28-fe78-4ad4-b12a-a7340d324ec1'
-        controls=''
-        autoPlay
-        loop='loop'
-      ></video>
-      <img
-        className='banner-bg-mobile'
-        src='https://oss.guangmangapp.com/e095687b-20f2-4242-9b65-3ca3e258b918.png'
-        alt=''
-      />
-      <div className='mask'></div>
-      <div className='logo-solgan'>
-        <img
-          src='https://oss.guangmangapp.com/e52c49f4-01b7-4826-9382-dd5ec056163d.png'
-          alt=''
-          className='logo-center'
-        />
-        <div className='solgan' style={style2}>
-          {intl.get('solgan')}
+        <div style={{ display: 'none' }}>
+            <div className='banner-bg'></div>
+            <video
+                muted
+                id='video'
+                className='banner-bg'
+                src='https://oss.guangmangapp.com/d4a50b28-fe78-4ad4-b12a-a7340d324ec1'
+                controls=''
+                autoPlay
+                loop='loop'
+            />
+            <img
+                className='banner-bg-mobile'
+                src='https://oss.guangmangapp.com/e095687b-20f2-4242-9b65-3ca3e258b918.png'
+                alt=''
+            />
+            <div className='mask'></div>
+            <div className='logo-solgan'>
+                <img
+                    src='https://oss.guangmangapp.com/e52c49f4-01b7-4826-9382-dd5ec056163d.png'
+                    alt=''
+                    className='logo-center'
+                />
+                <div className='solgan' style={style2}>
+                    {intl.get('solgan')}
+                </div>
+            </div>
         </div>
-      </div>
-      <div className='nav-top'>
+        <Home />
+        <div className='nav-top'>
         <div className='nav-wrap'>
           <img
             className='nav-inner-pic'
@@ -108,4 +115,4 @@ function Banner(props) {
   );
 }
 
-export default Banner;
+export default withRouter(Banner);
