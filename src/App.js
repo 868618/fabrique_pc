@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Detail from './subpages/detail'
-import Index from './components/Index'
+import Index from './components/Index.test'
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Resize from './context/Resize'
 

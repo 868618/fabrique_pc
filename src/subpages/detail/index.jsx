@@ -4,7 +4,7 @@ import Player from 'xgplayer';
 import Resize from "../../context/Resize";
 import CustomBigSwiper from './components/CustomBigSwiper'
 import CustomSmallSwiper from './components/CustomSmallSwiper'
-import Banner from "../../components/Banner";
+import Banner from "../../components/Banner.test";
 import allList from '../../asset/desginers'
 import { withRouter } from 'react-router-dom'
 import intl from "react-intl-universal";
@@ -12,7 +12,6 @@ import intl from "react-intl-universal";
 
 
 const Big = (props) => {
-    console.log(888888888, props)
     const [list, setList] = useState(null)
     useEffect(() => {
         if (props.list) {
@@ -39,18 +38,26 @@ const Big = (props) => {
         mark === 'next' ? swiper.slideNext() : swiper.slidePrev()
         setActiveIndex(swiper.realIndex)
     }
+
+    const [tip, setTip] = useState(intl.get('detail_tips')[props.list.index])
+
+    const changeLang = () => {
+        const lang = intl.options.currentLocale;
+        intl.options.currentLocale = lang === 'zh' ? 'en' : 'zh';
+        setTip(intl.get('detail_tips')[props.list.index])
+    }
     return (
         <>
-            <Banner />
+            <Banner changeLang={changeLang} />
             <div className="subpage_desginer_box">
                 <div className="videoBox" style={{zIndex: 1}}>
                     <div className="video" />
                 </div>
                 <div className="description">
-                    { intl.get('detail_tips')[props.list.index] }
+                    { tip }
                 </div>
                 <div className="loop">
-                    <header className="header">2020春夏联名系列</header>
+                    <header className="header">{intl.get('detail_swiper_title')}</header>
                     <main className="main">
                         <div className="bar">
                             <div className="btn left" onClick={ () => move('pre')} />

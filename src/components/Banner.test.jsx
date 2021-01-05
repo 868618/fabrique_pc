@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import classnames from 'classnames';
 import intl from 'react-intl-universal';
 // import { withRouter } from 'react-router-dom'
@@ -21,7 +21,7 @@ const Banner = (props) => {
     show: isShow
   });
   const [links, setLinks] = useState([
-    { title: '首页', hoverTitle: 'HOME', href: '#', hoverStatus: true },
+    { title: '首页', hoverTitle: 'HOME', href: '#home', hoverStatus: true },
     {
       title: '关于我们',
       hoverTitle: 'About Us',
@@ -57,6 +57,10 @@ const Banner = (props) => {
   const handleClick = (index) => {
     setLinks(links.map(((item, idx) => Object.assign(item, {hoverStatus : index == idx}))))
   }
+
+  useEffect(() => {
+    handleClick(props.index)
+  }, [props.index])
 
   const navMenu = classnames('nav-menu', { hide: isShow });
   return (

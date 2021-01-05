@@ -58,7 +58,7 @@ export default {
   'business-shequ-3': '获得时尚启发',
   solgan: '我们是一个由设计师驱动的社交化时尚品牌',
   desginer: '设计师',
-  brandResources: '联名设计师',
+  brandResources: '合作设计师',
   channel: '新媒体矩阵',
   media_1: '小红书',
   media_2: '微信公众号',

@@ -1,40 +1,40 @@
 const tips = [
-    `法国设计师Alex Rotin（亚历克斯·罗丁）工作于香奈儿高级定制设计组多年，曾在老佛爷创立的同名品牌KARL LAGERFELD和 KENZO 实习，从法国ESMOD高级时装艺术学院毕业后，在巴黎成立了自己的同名品牌ALEX ROTIN。
+    `Alex Rotin, who comes from France, has worked in Chanel's haute couture design team for many years. He has interned in KARL LAGERFELD and KENZO. After graduating from ESMOD in France, Alex Rotin established his own brand Alex Rotin in Paris.
+Here is the Alex Rotin x Fabrique collection inspiration:
+“ Paris, une ville lumière, ville d'art et d'architecture. Les Parisiens suivent leurs pas, traversent l'histoire de la mode et de la haute couture, pensant à ce qu'est l'élégance éternelle. ”`,
+    `Carlos Campos, a designer from the Republic of Honduras, is a full member of the American Fashion Designers Association and has been nominated for CFDA / VOGUE Fashion Fund and entered the final. Justin Timberlake, Cai Xukun and other stars across the music and film industry are his loyal fans. Campos also worked with the Honduran government to establish the country's first Fashion University in 2015.
 
-Alex Rotin × Fabrique 联名系列灵感：
-“巴黎，光之城，艺术与建筑之城；巴黎人踏着他们的步子，穿过时尚、高定的历史，思考什么是永恒的优雅。”
-——Alex Rotin`,
-    `来自洪都拉斯共和国的设计师Carlos Campos（卡洛斯·坎波斯）是美国时装设计师协会正式成员，曾被提名CFDA/Vogue Fashion Fund并进入决赛。Justin Timberlake和蔡徐坤等横跨音乐、影视界的明星都是他的忠实粉丝。2015年Campos还与洪都拉斯政府合作成立了该国第一所时装大学。
+The design inspiration of the Carlos Campos × Fabrique cooperative collection comes from the architectural aesthetics of the architectural poet Santigo Calatrava.
+The collection combines simple lines and exquisite production technology and details, and also is covered by the calm and comfortable tones.`,
+    `Cosima and Christa, from Switzerland, are the founders of Ottolinger and also are the exclusive designers of Kim Kardashian and Beyonce. Cosima and Christa worked in Yeezy and were nominated for the LVMH award of the International Association of Designers. Their works have now entered many well-known buyer's shops. 《Vogue》、《Purple》and other medias also praised their talents.
 
-Carlos Campos × Fabrique合作系列设计灵感来自建筑诗人Santigo Calatrava的建筑美学。
-该系列融合了简洁的线条和精致的制作工艺，简约且注重细节，沉稳舒适的色调涵盖整个系列。`,
-    `来自瑞士的柯西玛（Cosima）和克里斯塔（Christa）是设计师品牌Ottolinger的创始人，也是Kim Kardashian和Beyonce等明星的御用设计师。Cosima和Christa曾任职Yeezy，并获得国际设计师协会LVMH奖提名。她们的作品现已入驻多家知名买手店。《Vogue》和《Purple》等媒体也对二位的才华不吝赞赏。
+Cosima Christa × Fabrique series brings women a confident attitude and elegant feeling: natural fabrics are for a peaceful morning, fashionable collocation is for a busy day, and colorful patterns are for a unique night full of inspiration.`,
+    `Jean Paul Knott, a minimalist master from Belgium, has been the senior ready-to-wear director of YSL for 12 years, responsible for the design of " YSL Rive Gauche " ready-to-wear collection. JeanPaulKnott, a brand store with the same name, is located in the United States, Japan, South Korea and Europe. Influenced by Yves Saint Laurent, his clothes have been reduced to simple ones, refusing to be gorgeous and respecting their own spirit. Zhao Wei, Lin Xinru, Fan Chengcheng, Re Yiza and many other Chinese stars have wore his items.
 
-Cosima Christa × Fabrique联名系列，给女性带来自信的态度和优雅的感受：自然的面料之于安心的清晨，时尚的搭配之于忙碌的一天，色彩丰富的图案之于充满灵感的独特夜晚。`,
-    `来自比利时的极简大师Jean Paul Knott曾担任 YSL 品牌高级成衣总监长达 12 年，负责“YSL左岸”高级成衣系列的设计。他的同名品牌店 JEANPAULKNOTT 遍布美国、日本、韩国以及欧洲各地，在国际市场中占有一席之地。受Yves Saint Laurent影响，他所设计的衣服褪繁为简，拒绝声色华丽，尊重自我精神。赵薇、林心如、范丞丞、热依扎等多位明星都曾上身演绎。
+Inspired by Romanian sculptor Constantine Bruni, Jean Paul Knott × Fabrique combines abstract and simple geometric lines with the implied meaning of concrete art, subverts classics and realizes the originality of style and function.`,
+    `Lee Seong Dong, a Korean designer, has won several awards. His design adheres to the integration of environmental protection art and fashion, transcends gender boundaries. He designs clothes inspired by art, upgrading, deconstruction and reconstruction, and contracts the private clothes of "sexy little wild horse" Jin Fuya and "national first love" Pei Xiuzhi, with unlimited styles.
 
-Jean Paul Knott × Fabrique灵感来源于罗马尼亚雕塑家康斯坦丁·布吕尼，该系列将抽象的简洁几何线条和具象艺术的寓意融为一体，颠覆经典，实现了风格与功能的独创。`,
-    `韩国设计师Lee Seong Dong（李成东）曾斩获多个奖项。他的设计坚持将环保艺术与时尚相融，跨越性别界限，基于艺术、升级、解构和重建等方式设计服装，承包了“性感小野马”金泫雅、“国民初恋”裴秀智的私服穿搭，风格完全不受限。
+Lee Seong Dong × Fabrique collection, by combining two or more features in a symmetric or asymmetric way, makes the work both conflict and harmony, and reinterprets balance, harmony and aesthetics from a unique perspective.`,
+    `Pascal Miller, a Frenchman, was the designer of Givenchy fashion house. Under the guidance of John Galliano and Alexander McQueen, Pascal Millet was in charge of seasons haute couture. Pascal Millet's brand under the same name is sought after by many famous artists such as grace goddess Lin Xinru, popular movie stars Ma Sichun, Lu Jingshan and pop star Rihanna.
 
-Lee Seong Dong × Fabrique联名系列，通过对称或不对称的结合两个或多个特征，使作品既冲突又和谐，以独特的视角重新诠释平衡、和谐与美学。`,
-    `法国设计师Pascal Millet（帕斯卡·米勒）是纪梵希时装屋的设计主将，在John Galliano和Alexander McQueen的指导下，负责高级服装等私人定制系列。Pascal Millet的同名品牌受到优雅女神林心如、人气影星马思纯、卢靖姗以及欧美流行天后Rihanna等一众明星艺人的追捧。
+In Pascal Millet × Fabrique collection, Mr. Pascal's design is from his "Parisian collection", and his work is "A wearable collection for Contemporary Women who like fashion and love to create their own looks. "`,
+    `French designer Philippe Perisse has worked in Scherrer and John Galliano fashion house. He was invited by L'Oreal and was responsible for the development of the full range of Lancome and Armani cosmetics. He believes that clothing is women's armor, emphasizing that he only designs clothes for powerful, independent women.
 
-Pascal Millet × Fabrique联名系列中，Pascal先生的设计出自他的“Parisian Collection”（巴黎人高定系列），他的作品是 “方便平日穿着的设计，适合喜欢时尚且有自己风格的现代女性”。`,
-    `法国设计师Philippe Perisse（菲利普·佩里斯）先后在⾼定时装屋Scherrer和John Galliano⼯作，曾被欧莱雅邀请加⼊并负责Lancome和Armani彩妆全系列产品开发。他认为服装是女性的铠甲，强调自己只为有力量的独立女性设计服装。
+Philippe perisse × Fabrique collection is inspired by Philippe Perisse brand's own DNA - Urban explorer.
+The whole series embodies two characteristics of military uniform style: highly functional and modeling, presenting both female charm and male handsome.`,
+    `Stephane Rolland is a master of haute couture from France, and a formal member of the FHCM, who is on a par with the members from Chanel haute couture, Dior haute couture, Saint Laurent and other haute couture. He has created more than half of the gowns for the world's top goddesses such as Beyoncé and Kim Kardashian. Rolland was the creative director of Balenciaga and an official partner of Cannes Film Festival.
 
-Philippe Perisse × Fabrique 联名系列灵感来源于Philippe Perisse品牌本身DNA—— 都市探险家。
-整个系列体现了军装风格的两个特点：极具功能性与造型感，既呈现女性的魅力，又带有男性的帅气。`,
-    `Stephane Rolland （斯蒂芬·罗兰）是来自法国的高定大师，法国高级定制和时尚公会正式会员，与香奈儿高定、迪奥高定、圣罗兰等高定成员齐名，Beyonce和Kim Kardashiahn等全球顶流女神的战袍一大半都由他创造。Rolland曾任职Balenciaga创意总监，也是戛纳电影节的官方合作伙伴。
+The themes of Stephane Rolland × Fabrique collection are inheritance, classics and eternity. Its modeling adheres to the art and architectural core of Paris. Stephane Rolland believes that "Haute Couture is not just fashion. For me, it is a spirit.”`,
+    `Vivienne Tam, a Chinese-American designer, has been in fashion for many years. In 1998, Vivienne Tam was nominated for the "Perry Ellis" award of CFDA, and won the "You Bring Charm to the World Award" in 2008. Her“East-meets-West”design concept is highly praised by the international fashion industry. In 1994, she founded VIVIENNE TAM, a personal brand with her name in New York. Vivienne Tam graduated from the design major, Hong Kong Polytechnic University, and then went to Parsons Institute of Design in the United States. Lady Gaga, Gong Li, Coco Lee and shiko Suhara are her loyal fans.
+VIVIENNE TAM × Fabrique series returns to the oriental culture, taking Chinese traditional manual embroidery and national totem as creative elements, and interpret the implicit and soft beauty of oriental women with clothing custom.`,
+    `Chinese fashion designer Xuzhi Chen has been shortlisted for H&M design award, nominated LVMH award and Woolmark Prize Award, and was listed in Forbes China under 30 elite list in 2017, fashion business review BOF 500 in 2018, and ELLE STYLE AWARDS designer of the year in 2020.
+He graduated from Central St. Martin's College in London and founded his personal brand XUZHI in London since 2015. Such as Qian Xi, Wang Junkai, Zhou Dongyu, Wang Jiaer, Tong Yao and Liu Wen, hundreds of stars have all worn his designs.
 
-Stephane Rolland × Fabrique 联名系列以传承、经典、永恒为主题，造型秉承巴黎的艺术与建筑核心， Stephane Rolland 认为“高定让一个人做自己，勇于与别人不一样”。`,
-    `美籍华裔设计师Vivienne Tam立足时尚界多年。1998年，Vivienne Tam被提名CFDA “ Perry Ellis ”奖，2008年荣获“影响世界华人大奖”。她所倡导的East-meets-West设计理念深受国际时装界推崇，1994年在纽约创立了个人同名品牌VIVIENNE TAM。Vivienne Tam毕业于香港理工大学设计系，后去到美国帕森斯设计学院继续学习。LadyGaga、巩俐、李玟、水原希子都是她的忠实拥趸。
-VIVIENNE TAM × Fabrique系列回归东方文化，以中国传统手工刺绣、民族元素图腾作为设计元素，用服饰语言诠释着东方女性的含蓄柔美。`,
-    `中国时装设计师陈序之曾入围H&M设计大奖、提名LVMH奖及国际羊毛标志奖，入选2017福布斯中国30岁以下精英榜，2018年时装商业评论BoF 500榜单，2020年获得ELLE STYLE AWARDS年度风格设计师。
-他毕业于伦敦中央圣马丁学院，2015年在伦敦创立了个人品牌XU ZHI。易烊千玺、王俊凯、周冬雨、王嘉尔、童瑶、刘雯等上百位明星都曾穿着过他的作品。
-
-XU ZHI × Fabrique联名系列刻画了1970年代的纽约，破坏性的混沌与浪漫并存。年轻艺术家和诗人们期待着自由、狂欢与解脱。`
+XUZHI × Fabrique collection depicts New York in the 1970s, where destructive chaos and romance co-exist. Young artists and poets are looking forward to freedom, carnival and liberation.`
 ]
+const detail_swiper_title = 'Collection Presentation Fall-Winter 2020'
 
 export default {
-    detail_tips: tips
+    detail_tips: tips,
+    detail_swiper_title
 }

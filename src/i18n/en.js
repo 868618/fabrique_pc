@@ -64,7 +64,7 @@ export default {
   'business-shequ-2': 'express their personal styles, and be inspired.',
   'business-shequ-3': '',
   desginer: 'Designers',
-  brandResources: 'Brand Resources',
+  brandResources: 'Collaborative Designers',
   channel: 'Social media accounts',
   media_1: 'Little Red Book',
   media_2: 'Wechat',
