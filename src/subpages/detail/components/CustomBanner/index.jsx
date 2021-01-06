@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useMemo} from 'react';
+import React, {useEffect, useState} from 'react';
 import classnames from 'classnames';
 import intl from 'react-intl-universal';
 import { withRouter } from 'react-router-dom'
@@ -62,39 +62,10 @@ const Banner = (props) => {
   useEffect(() => {
     handleClick(props.index)
   }, [props.index])
-  const [isGo, setIsGo] = useState(false)
 
   useEffect(() => {
-    setIsGo(props.location.pathname !== '/detail')
-  }, [props.location.pathname])
-  // 默认选中
-  useEffect(() => {
-    if (props.location.pathname === '/detail') {
-      handleClick(5)
-      window.onscroll = () => {}
-    }
+    handleClick(4)
   }, [])
-
-  useMemo(() => {
-    window.onscroll = () => {}
-    return () => {
-      console.log('执行卸载')
-      window.onscroll = () => {}
-    }
-  }, [])
-
-  window.onscroll = () => {
-    const list = ['home', 'aboutus', 'business', 'fabrique_app', 'hezuoshejishi', 'pinpaiziyuan', 'medium', 'contact']
-    // const pathname = props.location.pathname
-    const halfScreenHeight = window.innerHeight * 0.5
-    if (isGo) {
-      list.forEach((item, index) => {
-        const dom = document.getElementById(item)
-        const rect = dom.getBoundingClientRect()
-        if (rect.top <= halfScreenHeight) handleClick(index, item)
-      })
-    }
-  }
 
   const navMenu = classnames('nav-menu', { hide: isShow });
   return (

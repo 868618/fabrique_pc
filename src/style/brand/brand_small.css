@@ -68,10 +68,19 @@
     margin-top: 10px;
 }
 
+.brand_desginer_items_small .designer_item p:last-of-type{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .brand_desginer_items_small .designer_item p img{
-    width: 8px;
-    height: 10px;
+    width: 4px;
+    height: 5px;
     display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
 }
 
 #brand .brand_kol{

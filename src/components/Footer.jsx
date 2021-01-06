@@ -16,7 +16,7 @@ function Footer() {
   return (
     <div className='footer-wrap' style={style2} id="contact">
       {/*<div className='mt'></div>*/}
-      <div id='contact' className='footer-title-en'>
+      <div className='footer-title-en'>
         Live Unique
       </div>
       <div className='footer-title-ch' style={style}>

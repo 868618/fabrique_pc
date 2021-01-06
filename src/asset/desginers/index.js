@@ -11,7 +11,9 @@ const list = [
             {src: "https://oss.fabrique.cn/e5de9bcc-4a78-414a-8e17-36a6e74c2f65.jpg"},
             {src: "https://oss.fabrique.cn/d038dff6-0bdf-4953-9b97-91b0a426a3ea.jpg"},
         ],
-        logo: "https://oss.fabrique.cn/3c692a26-a47c-4edd-9b36-f77f19ed9663.png"
+        logo: "https://oss.fabrique.cn/c8b4aa50-c31e-4fef-a5b8-f81d0bedaedd.png",
+        pf: 'https://oss.fabrique.cn/ee4e9212-690f-4010-bcf9-6bd8aa2f7c32.jpg',
+        video: 'https://oss.fabrique.cn/0b43063c-52eb-4123-96e9-d302c2f6e6ae.mp4'
     },
     {
         back: "https://oss.fabrique.cn/7ece2c7e-ec53-481d-9674-7787046a35ec.jpg",
@@ -26,7 +28,9 @@ const list = [
             {src: "https://oss.fabrique.cn/64f341c5-80e0-472c-b1b7-306f2c346658.jpg"},
             {src: "https://oss.fabrique.cn/8e8df93f-9dbc-4647-8389-74adc5b8164b.jpg"}
         ],
-        logo: "https://oss.fabrique.cn/0d7178ad-b58a-4058-827e-a949b773c4b6.png"
+        logo: "https://oss.fabrique.cn/4fdcc740-1e0d-4520-a0aa-358fd1546728.png",
+        pf: 'https://oss.fabrique.cn/c1edb628-15d4-47de-a6e9-d5ecd2bd8904.jpg',
+        video: 'https://oss.fabrique.cn/d46f1686-e065-4c63-8770-0f4f32f8e5c8.mp4'
     },
     {
         back: "https://oss.fabrique.cn/993c7d55-b8a9-40ff-865e-58a8afab29eb.jpg",
@@ -46,7 +50,9 @@ const list = [
             {src: "https://oss.fabrique.cn/aed53419-924e-4266-a07e-f8b7bc33a6f2.jpg"},
             {src: "https://oss.fabrique.cn/ee09cc68-c4e8-4ace-9fef-f894b0674da6.jpg"},
         ],
-        logo: "https://oss.fabrique.cn/032381c6-863f-4b20-98ab-015e1bfa4569.png"
+        logo: "https://oss.fabrique.cn/1b3cdba3-e9c2-423d-a883-044cae8341d1.png",
+        pf: 'https://oss.fabrique.cn/6c33320d-3750-4dc6-88df-3b8128e1f60a.jpg',
+        video: 'https://oss.fabrique.cn/771a627c-a08a-4439-8e7e-6c3299a7c5cd.mp4'
     },
     {
         back: "https://oss.fabrique.cn/9d9b8432-efb7-49a8-a695-b4a4512b616a.jpg",
@@ -61,7 +67,9 @@ const list = [
             {src: "https://oss.fabrique.cn/11103569-46ff-4f57-9449-d66de30e1c82.jpg"},
             {src: "https://oss.fabrique.cn/d3314dda-bb82-4760-a153-e77b16dbc0b4.jpg"},
         ],
-        logo: "https://oss.fabrique.cn/82e34cc7-c17d-4358-ad05-0ac3a850aed2.png"
+        logo: "https://oss.fabrique.cn/7545d7f9-a446-4d4c-b7a3-6a507e3c0c01.png",
+        pf: 'https://oss.fabrique.cn/94d075dd-52c4-4243-bcab-a07d21d1fad9.jpg',
+        video: 'https://oss.fabrique.cn/6b2cf6e1-acc1-4c2c-9689-b9f2038738a6.mp4'
     },
     {
         back: "https://oss.fabrique.cn/9fce6f2f-3f4f-4b2b-92e1-d6091e619203.jpg",
@@ -85,12 +93,14 @@ const list = [
             {src: "https://oss.fabrique.cn/f8aa6ad7-c6de-4267-9f42-053c6abfb1db.jpg"},
             {src: "https://oss.fabrique.cn/67d56401-20a4-4a1a-9f43-379e9cb8c650.jpg"},
         ],
-        logo: "https://oss.fabrique.cn/6485931d-5d59-4513-b9a6-1e34281bcb69.png"
+        logo: "https://oss.fabrique.cn/81edda8b-fe77-4e21-bde7-dc7ff912d87f.png",
+        pf: 'https://oss.fabrique.cn/1c6ef120-7ca1-4e52-946b-6aa506c152ca.jpg',
+        video: 'https://oss.fabrique.cn/a4f08824-fcf9-4eed-98f3-895b6a0c9b19.mp4'
     },
     {
         back: "https://oss.fabrique.cn/a793b7d7-464d-4a59-9f96-f0ce0a8be4fe.jpg",
         name: "Pascal Millet",
-        face: "https://oss.fabrique.cn/d6ffb93c-ee82-4a15-b124-b23a432868f5.jpg",
+        face: "https://oss.fabrique.cn/d9c7c1e4-1332-43ad-9abb-63418e7292cc.jpg",
         index: 5,
         opus: [
             {src: "https://oss.fabrique.cn/dd94f4ab-be31-4d83-9164-1d79ed82d542.jpg"},
@@ -100,12 +110,14 @@ const list = [
             {src: "https://oss.fabrique.cn/ad2a29ce-0eb2-4da5-8ec4-ea07c31185f9.jpg"},
             {src: "https://oss.fabrique.cn/5d66360a-3d7b-4ad6-b577-e0d456428983.jpg"},
         ],
-        logo: "https://oss.fabrique.cn/6759a00f-44e3-43f2-8276-d294edffb45a.png"
+        logo: "https://oss.fabrique.cn/77680082-eddf-4f43-a2cc-fef1fcbd6589.png",
+        pf: 'https://oss.fabrique.cn/cb1b026e-e819-45cf-9b82-78d5adfc9cbc.jpg',
+        video: 'https://oss.fabrique.cn/27462566-9dc9-45aa-9252-f44e40f902b3.mp4'
     },
     {
         back: "https://oss.fabrique.cn/958b4744-f066-4294-916b-c1b3fcc77a2b.jpg",
         name: "Philippe Perisse",
-        face: "https://oss.fabrique.cn/2e51c97b-5fd6-448a-b576-37d29f660bce.jpg",
+        face: "https://oss.fabrique.cn/a9f7b88a-e6b4-478b-86d6-a20e3de673b1.jpg",
         index: 6,
         opus: [
             {src: "https://oss.fabrique.cn/d3e34941-bf09-448a-bcff-0bac15deaf29.jpg"},
@@ -114,7 +126,9 @@ const list = [
             {src: "https://oss.fabrique.cn/853df571-9267-4d2c-82e0-6c9703d61926.jpg"},
             {src: "https://oss.fabrique.cn/105008ed-f701-4ca8-869c-3575138b0edd.jpg"},
         ],
-        logo: "https://oss.fabrique.cn/4cce7712-e985-4b31-a47e-3e3bb8a1d020.png"
+        logo: "https://oss.fabrique.cn/c14932d9-844b-4a3a-a14e-ef44158747fc.png",
+        pf: 'https://oss.fabrique.cn/1c974821-540d-4448-b62d-0cb417c2508f.jpg',
+        video: 'https://oss.fabrique.cn/c4c133c4-db76-4783-89eb-c89ab0f116db.mp4'
     },
     {
         back: "https://oss.fabrique.cn/792773db-4080-4910-b3c5-e598c06ba9a3.jpg",
@@ -128,7 +142,9 @@ const list = [
             {src: "https://oss.fabrique.cn/fc9f962b-e9ac-4bc9-b131-cfdb8692088c.jpg"},
             {src: "https://oss.fabrique.cn/91984f1d-9c5b-453c-8972-3e3844568d17.jpg"},
         ],
-        logo: "https://oss.fabrique.cn/0e80ff36-b846-478a-a565-2dd5e1fca153.png"
+        logo: "https://oss.fabrique.cn/b67969aa-1c0c-4910-bc40-77123f26b4d4.png",
+        pf: 'https://oss.fabrique.cn/6013f2a7-6455-49f7-9818-affe285f3b9e.jpg',
+        video: 'https://oss.fabrique.cn/b97035c4-b57c-41b0-abc3-d9df938597e4.mp4'
     },
     {
         back: "https://oss.fabrique.cn/124f6c71-74f8-43af-babd-040b52f597ee.jpg",
@@ -142,7 +158,9 @@ const list = [
             {src: "https://oss.fabrique.cn/d1631987-4730-4ec6-b0e3-9ae84854a898.jpg"},
             {src: "https://oss.fabrique.cn/a14f557c-6171-41d3-8f9d-225efa3c393d.jpg"},
         ],
-        logo: "https://oss.fabrique.cn/ce1e349c-a4d3-418f-bb95-e3b6278afc7d.png"
+        logo: "https://oss.fabrique.cn/4b6853b7-d8e2-4ad6-a7ec-c577397e59b8.png",
+        pf: 'https://oss.fabrique.cn/6bdad6dc-d8e0-454d-aafc-d3be1ad1f616.jpg',
+        video: 'https://oss.fabrique.cn/ef9140ad-43d1-4efd-a24a-189eea03684e.jpg'
     },
     {
         back: "https://oss.fabrique.cn/f1977e88-1350-4140-94ff-65a50b4ba05a.jpg",
@@ -159,7 +177,9 @@ const list = [
             {src: "https://oss.fabrique.cn/56a7cec4-d1eb-4381-9a77-daa7e45df0ed.jpg"},
             {src: "https://oss.fabrique.cn/c8567b85-691f-4efd-81e7-945767369a5c.jpg"},
         ],
-        logo: "https://oss.fabrique.cn/4e9bcd8f-8c16-40b4-8cc9-8bef40cea688.png"
+        logo: "https://oss.fabrique.cn/cd9b5b6b-77c6-44ae-aa71-9fd2e8290d6d.png",
+        pf: 'https://oss.fabrique.cn/d7b970a8-47b2-4698-b012-2ace60d32781.jpg',
+        video: 'https://oss.fabrique.cn/882a3d3b-cc05-4a8e-9d3d-f898ef1af37a.mp4'
     }
 ]
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import intl from "react-intl-universal";
 // import intl from 'react-intl-universal';
+// eslint-disable-next-line no-unused-expressions
 import('../style/fabrique_app/index.css')
 
 function Fabrique_app() {

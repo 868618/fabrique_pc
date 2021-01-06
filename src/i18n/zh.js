@@ -94,6 +94,8 @@ export default {
   Address: '北京市朝阳区三里屯SOHO办公B',
   zhoubian: '周边',
   chenxuzhi: "陈序之",
+  viewMore: '查看更多',
+  pinpaiziyuan: '品牌资源',
   ...FABRIQUE_ZH,
   ...DETAIL
 };

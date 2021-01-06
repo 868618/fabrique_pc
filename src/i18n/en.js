@@ -112,6 +112,8 @@ export default {
   Address: 'Room2102, Sanlitun SOHO, Building2, Chaoyang District, Beijing',
   zhoubian: 'Merchandise',
   chenxuzhi: "Xuzhi Chen",
+  viewMore: 'VIEW MORE',
+  pinpaiziyuan: 'Brand Resources',
   ...FABRIQUE_EN,
   ...DETAIL
 };
