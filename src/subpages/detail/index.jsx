@@ -106,8 +106,23 @@ const Big = (props) => {
                 const defDom = dom.querySelector('.xgplayer-skin-default')
                 defDom.style.background = '#EDF0F0'
 
-                player.on('pause', onPause).on('play', onPlay).on('ended', () => {
-                    console.log('播放完毕')
+                player.on('pause', onPause).on('play', onPlay).on('requestFullscreen', () => {
+                    console.log('进入全屏')
+                    const fullscreendom = document.querySelector('.xgplayer-fullscreen')
+                    // https://oss.fabrique.cn/f670fcc6-41d1-457e-8e43-0d1a42fe6e84.png
+
+                    // https://oss.fabrique.cn/d27e87e8-b63c-4c74-9ae8-8aa5f9973783.png
+                    fullscreendom.innerHTML = '<div class="xgplayer-icon"><img src="https://oss.fabrique.cn/f670fcc6-41d1-457e-8e43-0d1a42fe6e84.png" style="display: block;width: 100%;transform: scale(0.6)" /></div>'
+
+
+                }).on('exitFullscreen', () => {
+                    const fullscreendom = document.querySelector('.xgplayer-fullscreen')
+                    // https://oss.fabrique.cn/f670fcc6-41d1-457e-8e43-0d1a42fe6e84.png
+
+                    // https://oss.fabrique.cn/d27e87e8-b63c-4c74-9ae8-8aa5f9973783.png
+
+                    fullscreendom.innerHTML = '<div class="xgplayer-icon"><img src="https://oss.fabrique.cn/d27e87e8-b63c-4c74-9ae8-8aa5f9973783.png" style="display: block;width: 100%;transform: scale(0.6)" /></div>'
+                    console.log('退出全屏')
                 })
             }, 0)
         }
@@ -129,6 +144,7 @@ const Big = (props) => {
                 // const loadingdom = document.querySelector('.xgplayer-loading')
                 const replaydom = document.querySelector('.xgplayer-replay')
                 const loadingdom = document.querySelector('.xgplayer-loading')
+                const spinnerdom = document.querySelector('.xgplayer-enter-spinner')
                     // width: 61.25vw;
                 if (startdom) {
                     startdom.innerHTML = '<img src="https://oss.fabrique.cn/558d410d-cac7-4960-ad63-c905c57c08aa.png" style="display: block;width: 100%" />'
@@ -145,12 +161,30 @@ const Big = (props) => {
                     controlsdom.style.margin = '0 auto'
                     // console.log('controlsdom.clientHeight', controlsdom.clientHeight);
                     // xgplayer_pc.className = `${xgplayer_pc.className} customdom`
-                    replaydom.innerHTML = '<img src="https://oss.fabrique.cn/0b93f715-25b4-41e1-8817-a0bbeb62fac0.png" style="width: 78px;height: 78px" />'
+                    // replaydom.innerHTML = '<img src="https://oss.fabrique.cn/0b93f715-25b4-41e1-8817-a0bbeb62fac0.png" style="width: 78px;height: 78px" />'
                     loadingdom.getElementsByTagName('svg')[0].style.width = '70px'
                     loadingdom.getElementsByTagName('svg')[0].style.height = '70px'
+                    spinnerdom.style.width = '35px'
+                    spinnerdom.style.height = '35px'
+
+                    replaydom.innerHTML = '<img src="https://oss.fabrique.cn/558d410d-cac7-4960-ad63-c905c57c08aa.png" style="width: 50px;height: 50px" />'
+                    replaydom.addEventListener('click', () => {
+                        player.play()
+                    })
                 }
             }
         })
+    }, [player])
+
+    useEffect(() => {
+        // 定位到顶部
+        document.getElementById('detail_2021_1_6_20_14_26').scrollIntoView()
+        setTimeout(() => {
+            // 定位到顶部
+            document.body.scrollTop=document.documentElement.scrollTop=0
+            console.log('定位到顶部')
+            document.getElementById('detail_2021_1_6_20_14_26').scrollIntoView()
+        }, 600)
     }, [player])
 
     const el = useRef(null)
@@ -170,36 +204,38 @@ const Big = (props) => {
     }
     return (
         <>
-            <Banner links={links} changeLang={changeLang} />
-            <div className="subpage_desginer_box">
+            <div id="detail_2021_1_6_20_14_26">
+                <Banner links={links} changeLang={changeLang} />
+                <div className="subpage_desginer_box">
 
-                { props.list.video.endsWith('.mp4') ? (
-                    <div className="videoBox" style={{zIndex: 1}}>
-                        <div className="video_big_2021_1_6_12_42_22" />
-                    </div>
-                ) : (
-                    <div className="header_image">
-                        <img src={props.list.video} alt=""/>
-                    </div>
-                ) }
+                    { props.list.video.endsWith('.mp4') ? (
+                        <div className="videoBox" style={{zIndex: 1}}>
+                            <div className="video_big_2021_1_6_12_42_22" />
+                        </div>
+                    ) : (
+                        <div className="header_image">
+                            <img src={props.list.video} alt=""/>
+                        </div>
+                    ) }
 
-                <div className="description" style={ordinary}>
-                    { tip }
-                </div>
-                <div className="loop">
-                    <header className="header" style={style}>{intl.get('detail_swiper_title')}</header>
-                    <main className="main">
-                        <div className="bar">
-                            <div className="btn left" onClick={ () => move('pre')} />
-                        </div>
-                        <div className="swiper">
-                            { list ? <CustomBigSwiper list={list} ref={el} setActiveIndex={setActiveIndex} slidesPerView={2.94} /> : null }
-                        </div>
-                        <div className="bar">
-                            <div className="btn right" onClick={() => move('next')} />
-                        </div>
-                    </main>
-                    <div className='custompagination' style={ordinary}>{activeIndex + 1}/{list && list.opus.length + 1}</div>
+                    <div className="description" style={ordinary}>
+                        { tip }
+                    </div>
+                    <div className="loop">
+                        <header className="header" style={style}>{intl.get('detail_swiper_title')}</header>
+                        <main className="main">
+                            <div className="bar">
+                                <div className="btn left" onClick={ () => move('pre')} />
+                            </div>
+                            <div className="swiper">
+                                { list ? <CustomBigSwiper list={list} ref={el} setActiveIndex={setActiveIndex} slidesPerView={2.94} /> : null }
+                            </div>
+                            <div className="bar">
+                                <div className="btn right" onClick={() => move('next')} />
+                            </div>
+                        </main>
+                        <div className='custompagination' style={ordinary}>{activeIndex + 1}/{list && list.opus.length + 1}</div>
+                    </div>
                 </div>
             </div>
             <style jsx='true'>{`
@@ -348,8 +384,6 @@ const Small = (props) => {
         // eslint-disable-next-line
     }, [clientWidth, list])
     useEffect(() => {
-        // 定位到顶部
-        document.documentElement.scrollTop = 0
         setTimeout(() => {
             if (player) {
                 const startdom = document.querySelector('.xgplayer-start')
@@ -364,7 +398,11 @@ const Small = (props) => {
                 const loadingdom = document.querySelector('.xgplayer-loading')
                 const spinnerdom = document.querySelector('.xgplayer-enter-spinner')
                 if (startdom) {
-                    startdom.innerHTML = '<img src="https://oss.fabrique.cn/558d410d-cac7-4960-ad63-c905c57c08aa.png" style="display: block;width: 100%" />'
+                    startdom.innerHTML = '<img src="https://oss.fabrique.cn/558d410d-cac7-4960-ad63-c905c57c08aa.png" style="display: block;width: 50px;height: 50px;" />'
+                    startdom.style.width = '50px'
+                    startdom.style.height = '50px'
+                    startdom.style.background = 'none'
+                    startdom.style.boxSizing = 'borderBox'
                     splaydom.style.display = 'none'
                     cachedom.style.background= 'rgba(255,255,255,0.29)'
                     playeddom.style.backgroundImage = 'linear-gradient(-90deg,#FFF, #FFF)'
@@ -373,9 +411,13 @@ const Small = (props) => {
                     // fullscreendom.innerHTML = '<div class="xgplayer-icon"><img src="https://oss.fabrique.cn/d27e87e8-b63c-4c74-9ae8-8aa5f9973783.png" style="display: block;width: 100%;transform: scale(0.6)" /></div>'
                     // controlsdom.style.backgroundImage = 'linear-gradient(to top, red , yellow)'
                     controlsdom.style.backgroundImage = 'linear-gradient(to top, rgba(0,0,0,.3) , rgba(0,0,0,0))'
-                    replaydom.innerHTML = '<img src="https://oss.fabrique.cn/0b93f715-25b4-41e1-8817-a0bbeb62fac0.png" style="width: 78px;height: 78px" />'
-                    spinnerdom.style.width = '70px'
-                    spinnerdom.style.height = '70px'
+                    // replaydom.innerHTML = '<img src="https://oss.fabrique.cn/0b93f715-25b4-41e1-8817-a0bbeb62fac0.png" style="width: 50px;height: 50px" />'
+                    replaydom.innerHTML = '<img src="https://oss.fabrique.cn/558d410d-cac7-4960-ad63-c905c57c08aa.png" style="width: 50px;height: 50px" />'
+                    replaydom.addEventListener('click', () => {
+                        player.play()
+                    })
+                    spinnerdom.style.width = '20px'
+                    spinnerdom.style.height = '20px'
                 }
 
                 console.log(document.getElementsByTagName('video')[0])
@@ -384,6 +426,18 @@ const Small = (props) => {
                 })
             }
         })
+    }, [player])
+
+
+    useEffect(() => {
+        // 定位到顶部
+        document.getElementById('top_2021_1_6_18_18_51').scrollIntoView()
+        setTimeout(() => {
+            // 定位到顶部
+            document.body.scrollTop=document.documentElement.scrollTop=0
+            console.log('定位到顶部')
+            document.getElementById('top_2021_1_6_18_18_51').scrollIntoView()
+        }, 600)
     }, [player])
     const [tip, setTip] = useState(intl.get('detail_tips')[props.list.index])
     const [ links ] = useState([
@@ -528,7 +582,9 @@ const Index = (props) => {
     const [index, setIndex] = useState(null)
     const [list, setList] = useState(null)
     useMemo(() => {
-        let [[key, index]] = props.location.search.substr(1).split('&').map(item => item.split('='))
+        const params = props.location.search.substr(1).split('&').map(item => item.split('='))
+        console.log('params***---+++', params)
+        let [key1, index] = params[0]
         setIndex(Number(index))
     }, [props.location.search])
     useMemo(() => { setList(allList[index]) }, [index])

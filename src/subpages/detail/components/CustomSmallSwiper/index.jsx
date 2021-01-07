@@ -6,7 +6,6 @@ import { withRouter } from 'react-router-dom'
 import intl from "react-intl-universal";
 
 const CustomSmallSwiper = (props) => {
-    console.log('props', props)
     const { clientWidth  } = useContext(Resize)
     const [swiper, setSwiper] = useState(null)
     const [realIndex, setRealIndex] = useState(0)
@@ -92,7 +91,7 @@ const CustomSmallSwiper = (props) => {
                 opacity: 1 !important;
               }
               .custom_small_swiper_box .tip {
-                font-size: 1.5625vw;
+                font-size: 15px;
                 font-weight: 300;
                 color: #031C24;
                 text-align: center;

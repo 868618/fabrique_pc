@@ -184,6 +184,7 @@
 }
 .nav ul li a.active {
   color: #fc296b;
+  display: inline-block;
 }
 .nav ul li a.active::after {
   position: absolute;

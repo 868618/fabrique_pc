@@ -28,7 +28,6 @@ const Brand = (props) => {
     const [curList, setList] = useState(list)
 
     useEffect(() => {
-        console.log('触发更新')
         setList(curList)
     }, [intl.options.currentLocale])
 
@@ -41,13 +40,14 @@ const Brand = (props) => {
                 spaceBetween: 56,
                 centeredSlides: true,
                 observer:true,
+                initialSlide: 1,
                 loop: true,
                 on: {
                     tap(swiper) {
                         console.log(swiper.clickedSlide.dataset.index)
                         const index = swiper.clickedSlide.dataset.index
                         const href = window.location.href.split('/#/')[0]
-                        window.open(href + `/#/detail?index=${index}`)
+                        window.open(href + `/#/detail?index=${index}&lang=${intl.options.currentLocale}`)
                     },
                     resize () {
                         console.log(888999, this)
