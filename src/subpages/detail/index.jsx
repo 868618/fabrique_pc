@@ -202,6 +202,24 @@ const Big = (props) => {
         intl.options.currentLocale = lang === 'zh' ? 'en' : 'zh';
         setTip(intl.get('detail_tips')[props.list.index])
     }
+    // 判断中英文状态
+    useEffect(() => {
+        // const params = props.location.search.substr(1).split('&').map(item => item.split('='))
+        // let [key1, lang] = params[1]
+        const params = window.location.href.split('?')[1].split('&').map(item => {
+            const [key, val] = item.split('=')
+            return {
+                [key] : val
+            }
+        })
+        const exceptLang = params.length > 1 ? params[1].lang : null
+        const curRealLang = intl.options.currentLocale
+        console.log('intl.options.currentLocale-----------------------', curRealLang)
+        console.log('exceptLang-----------------------', exceptLang)
+        if (exceptLang && exceptLang !== curRealLang) {
+            changeLang()
+        }
+    }, [])
     return (
         <>
             <div id="detail_2021_1_6_20_14_26">

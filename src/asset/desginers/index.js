@@ -181,7 +181,6 @@ const list = [
         pf: 'https://oss.fabrique.cn/d7b970a8-47b2-4698-b012-2ace60d32781.jpg',
         video: 'https://oss.fabrique.cn/882a3d3b-cc05-4a8e-9d3d-f898ef1af37a.mp4'
     }
-
 ]
 
 export default list
