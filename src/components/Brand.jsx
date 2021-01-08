@@ -60,7 +60,7 @@ const Brand = (props) => {
                 instanceSwiper.update()
                 console.log('重新更新一下swiper')
             }
-        }, 0)
+        }, 100)
     }, [intl.options.currentLocale])
 
     const [bars] = useState([
