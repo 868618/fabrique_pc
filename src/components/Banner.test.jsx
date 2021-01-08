@@ -70,7 +70,7 @@ const Banner = (props) => {
   // 默认选中
   useEffect(() => {
     if (props.location.pathname === '/detail') {
-      handleClick(5)
+      handleClick(4)
       window.onscroll = () => {}
     }
   }, [])
